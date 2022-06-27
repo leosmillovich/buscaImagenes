@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
+:root {
+    --primary-color: #FFEB3B;
+    --primary-ligth: #FFF9C4;
+    --text-color: #212121;
+    --accent-color: #00BCD4;
+    --divider: #BDBDBD;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    padding-bottom: 40px;
+    font-size: 30px;
+}
+
+.buscador {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: solid 4px var(--divider);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 2px;
+}
+
+input,
+button {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 450px;
+    height: 40px;
+}
+
+button {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    background-color: var(--accent-color);
+    color: var(--primary-ligth);
+}
+
+button:hover {
+    border: solid 2px var(--text-color);
+    color: var(--text-color);
+    font-weight: bolder;
+}
+
+#resultado {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline
+}
+
+img {
+    max-width: 250px;
+    max-height: 300px;
+}
+
+.card {
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    max-height: 400px;
+    margin: 20px;
+
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    padding: 4px;
+    margin: 10px 4px 4px;
+    background-color: var(--accent-color);
+    color: var(--primary-ligth);
+    border-radius: 2px;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 4px -4px var(--accent-color), 4px 4px var(--accent-color);
+    border-radius: 4px;
+}
+
+#paginacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50px;
+}
+
+.btnPaginador {
+    border: solid 1px var(--divider);
+    color: var(--primary-color);
+}
+
+.btnPaginador:hover{
+    border: solid 1px var(--text-color);
+}
